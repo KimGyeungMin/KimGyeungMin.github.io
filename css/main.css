@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*공통역역*/
+body{
+	font-family: 'nanumgothic','나눔 고딕', sans-serif;
+	font-size: 16px;
+	letter-spacing: -1px; /*단어사이 간격*/
+	color: #444;
+	word-wrap: break-word; /*단어로 줄바꿈됨 ex)경민 입   -> 경민  
+												니다        입니다*/
+	line-height: 1; /*32px을 의미*/
+}
+/* :가상선택자(크기x), ::가상요소(크기0)*/
+a:link{color: #444;}
+
+a:hover{color : #444;}	
+
+a:visited{color: #444;}
+
+a{
+	text-decoration: none;
+}
+img{
+	border:none;
+}
+/* .클래스선택자 */
+.clear::after/*어떤영역의 뒤를 선택*/{
+	content: "";
+	clear: both; 
+	display: block;
+}
+.txt_right{
+	text-align: right !important/*우선적용,남이만들거 말고 내가 만든걸 최우선적용할때 씀*/;
+}
+.mt20{
+	margin-top: 20px !important ;
+}
+.w100p{
+	width: 100% !important ;
+}
+/* //공통영역  */
+
+
