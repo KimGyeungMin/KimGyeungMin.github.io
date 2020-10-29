@@ -94,7 +94,7 @@ header{
 	float: none;
 	width: 100%;
 	background: #31353d;
-	display:block;
+	display:none;
 }
 
 .closePop {
@@ -173,11 +173,29 @@ header{
 .gnb li:last-child a{/* 위에서 지정한건 다상속받음*/
 	background-image: url(./img/ico_gnb04.png);
 }
+.gnb li:nth-child(2n+1){
+	border-right: 1px solid #83868b;
+}
 /* //상단메뉴영역 */
 /* //헤더영역 */
 /* //모바일 영역 */
 
 </style>
+<script>
+	$(document).ready(function(){
+		$('.openMOgnb').click(function(){
+			$(".header_cont").css('display','block');
+			//header아이디영역 백그라운드 추가
+			$("#header").addClass('on');
+	});
+	
+	$(".closePop").click(function(){
+		$(".header_cont").css("display","none");
+		$("#header").removeClass('on');
+	});
+	
+});
+</script>
 </head>
 <body>
 
