@@ -4,7 +4,15 @@
 - 파이어폭스 개발자도구의 스타일 탭사용
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
+#### 20201029(목)
+-네이밍규칙: 카멜표기(낙타등 표기법)
+-햄버거메뉴 : .openMOgnb: gnb->(global navigation)글로벌네비게이션(전체메뉴)
+ps. page navigation(페이징 링크 처리(게시판 페이지넘기는 숫자))
+-웹접근성 : 시각장애인들을 위한 코딩추가.
+-스크린리더 프로그램용 코딩: text-indent:-9999px
+-사각형 영역 크기 : box-sizing : border-box; 
 #### 20201028(수)
+-md 는 mark down
 - z-index(배열처럼 0부터시작하는것 순서를 나타내는것) : 화면에는 레이어라는 개념으로 처리(포토피아로 설명들었음)
 -CSS 스타일 적용하는 3가지 방법
 1. (인라인스타일(태그 안쪽에 속성사용style="padding:10xp),
@@ -19,7 +27,7 @@
 - 반응형사이트 기획서_학생용 구글xlsx 다운받기(아래 구글링크):
 - https://drive.google.com/file/d/1dC2RMqDqNeEFtr-r-dvcsKk0YwPjk0Xy/view?usp=sharing
 
-#### 20201022(목)
+#### 20201029(목)
 
 - 소스내용 교육용으로 정리
 - 깃 사용시 토큰인증헤제: [윈도우 자격증명관리]에 personal access token 을 삭제 후 커밋
