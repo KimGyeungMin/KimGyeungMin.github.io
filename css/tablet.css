@@ -1,55 +1,42 @@
 @charset "UTF-8";
-@media all and (min-width:801px){
-    /* 태블릿  영역 */
-/* 상단로고와 메뉴스타일 */
-header {
-	height : 113px;
-}
+@media all and (min-width:801px) {
+/* 태블릿영역 */
 
-.header_area h1{
+/* 상단로고와 메뉴스타일 */
+header {height: 113px;}
+.header_area h1 {
 	float: left;
-	 padding: 25px 0 0;
-	 padding-left: 20px;
-	 width: initial;
-	 height: initial;
-	 text-align: initial;
+	padding: 25px 0 0;
+	padding-left: 20px;
+	width: initial;
+	height: initial;
+	text-align: initial;
 }
-.header_area h1 a{
+.header_area h1 a {
 	display: block;
 	width: 270px;
 	height: 71px;
-	background-size: initial !important ;
+	background-size: initial !important;
 }
-.openMOgnb {
-	display: none;
-}
-.header_cont{
+.openMOgnb {display: none;}
+.header_cont {
 	display: block;
-	float: right;
+	float:right;
 	width: 60%;
-	padding-right:20px ;
+	padding-right: 20px;
 	background: none;
 }
-.closePop{
-	display: none;
-}
+.closePop {display: none;}
 .util {
 	padding: 0;
-	text-align: right: ;;
+	text-align: right;
 	padding-top: 10px;
 }
-.util li {
-	float: none;
-	display: inline-block;
-}
-.util li::after{
-	color: #fff;
-}
-.util li a{
-	font-size: 14px;
-}
-.gnb{
-	float: right;
+.util li {float: none; display: inline;}
+.util li::after {color:#fff;}
+.util li a {font-size:14px;}
+.gnb {
+	float:right;
 	padding-top: 5px;
 	height: initial;
 	border-top: none;
@@ -60,28 +47,23 @@ header {
 	box-sizing: initial;
 	border-bottom: none;
 }
-.gnb li:nth-child(2n+1){
-	border: none;
+.gnb li:nth-child(2n+1) {
+	border:none;
 }
 .gnb li a {
-	padding: 26px 25px;
+	padding:26px 25px;
 	font-size: 18px;
 	height: inherit;
 	line-height: inherit;
 	background: none;
 }
-.gnb li + li a {
+.gnb li + li a {background: none;}
+.gnb li + li + li a {background: none;}
+.gnb li:last-child a {
 	background: none;
-}
-.gnb li + li + li a{
-	background: none;
-}
-
-.gnb li:last-child a{
-	padding-right: 0px;
-	background: none;
-}
+ 	padding-right: 0px;}
 /* //상단로고와 메뉴스타일 */
+
 /* 컨테이너영역 */
 #container {
 	padding-bottom: 20px;
@@ -105,18 +87,27 @@ ul.viewImgList li {
 	height: 550px;
 	line-height: 550px;
 	background-size: cover;
-	position: relative;
-	z-index: 50;
+	
 	width: 100%;
 }
 .roll_content a img {display: none;}
 li.imglist0 {
+	position: relative;
+	z-index: 50;
 	background: url(../img/maple.jpg) no-repeat;
 }
 li.imglist1 {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
 	background: url(../img/img_slidecontents02.png) no-repeat;
 }
 li.imglist2 {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
 	background: url(../img/img_slidecontents03.png) no-repeat;
 }
 .roll_content {position: relative;}
@@ -152,6 +143,5 @@ li.imglist2 {
 .rollingbtn li a {vertical-align: top;}
 /* //슬라이드영역 */
 
+/* //태블릿영역 */
 }
-
-/* //태블릿 영역 */
