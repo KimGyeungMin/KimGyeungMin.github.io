@@ -4,7 +4,8 @@ $(document).ready(function(){
         //header아이디영역 백그라운드 추가
         $(".header_cont").slideDown('slow');
         $("#header").addClass('on');
-    
+    	//상단으로 바로가기 버튼 클릭
+		$('.to_top a').smoothScroll();
 });
 
 $(".closePop").click(function(){
