@@ -8,6 +8,9 @@ $(document).ready(function(){
 		$('.to_top a').smoothScroll();
 });
 
+
+	
+
 $(".closePop").click(function(){
     // $(".header_cont").css("display","none");
     $(".header_cont").slideUp('fast');
