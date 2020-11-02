@@ -4,6 +4,8 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 202011012(월)
+-자바스크립트 : 조건문안에 !OK = not OK = false = !True     
+                        && == and , or ==||
 -Rest API : Representation 화면처리 API(앱인터페이스).
                 원시데이터(Rpw데이터-공공데이터)
                 앱인터페이스(API(input output))에서 받아서
