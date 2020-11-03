@@ -5,15 +5,15 @@
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
 
 #### 20201103(화) 
--시만텍 웹 : 의미있는 태그사용 == html5사용
-    header, footer, aticle, aside 웹문서에 의미있는 영역지정.
--white-space : nowrap
-     ->마지막 교시 입
-    ->니다.
-    ---> 만약에 wrap이면(아래)
-    ->마지막 교시
-    ->입니다.
-
+- 시만텍 웹: 의미있는 태그사용 == html5사용
+- header, footer, article, aside 웹문서에 의미있는 영역 지정.
+- <div id="header">...</div>
+- white-space:nowrap: 예)아래
+- 마지막 교시 입
+- 니다.
+- 만약에 wrap이면(아래)
+- 마지막 교시
+- 입니다
 - css 값에 대한 수정: 값이 3개 일때 = padding:40px 0 0;
 - 40px(위), 0(좌우) , 0(아래)
 - vertical(수직-세로) :top, middle, bottom
