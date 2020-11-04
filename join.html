@@ -13,28 +13,31 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery.smooth-scroll.min.js"></script>
 <script src="js/main.js"></script>
+<!-- html5가 아닌 유효성검사 라이브러리(아래) -->
+<script src="js/jquery.validate.js"></script>
+<script src="js/additional-methods.js"></script>
 <style>
-/* 사용자 추가 스타일(아래) */
-@media all and (min-width:801px) {
-/* 태블릿용 게시판쓰기영역 */
-.app_list .tit_lbl {
-	width:21%;
-	float:left;
-}
-.app_list .app_content {
-	width:79%;
-	float:right;
-	border:1px solid #ccc;
-}
-.appForm textarea {height:245px;}
-/* //태블릿용 게시판쓰기영역 */
-}
 
-@media all and (min-width:1066px) {
-/* PC용 게시판쓰기영역 */
-
-}
 </style>
+<script>
+$(document).ready(function() { 
+	$(".appForm").validate();
+	$.extend( $.validator.messages, { 
+		required: "필수 항목입니다.", 
+		email: "유효하지 않은 E-Mail주소입니다.", 
+		digits: "숫자만 입력 가능합니다.", 
+		creditcard: "신용카드 번호가 바르지 않습니다.", 
+		equalTo: "같은 값을 다시 입력하세요.", 
+		extension: "올바른 확장자가 아닙니다.", 
+		maxlength: $.validator.format( "{0}자를 넘을 수 없습니다. " ), 
+		minlength: $.validator.format( "{0}자 이상 입력하세요." ), 
+		rangelength: $.validator.format( "문자 길이가 {0} 에서 {1} 사이의 값을 입력하세요." ), 
+		range: $.validator.format( "{0} 에서 {1} 사이의 값을 입력하세요." ), 
+		max: $.validator.format( "{0} 이하의 값을 입력하세요." ), 
+		min: $.validator.format( "{0} 이상의 값을 입력하세요." )
+	});
+});
+</script>
 </head>
 <body>
 <!-- 헤더부터푸터까지 -->
@@ -129,7 +132,14 @@
 							<label for="name_lbl" class="tit_lbl pilsoo_item">작성자명</label>
 							<div class="app_content"><input   required name="name_lbl"  type="text" class="w100p" id="name_lbl" placeholder="이름을 입력해주세요"/></div>
 						</li>
-						
+						<li class="clear">
+							<label for="password_lbl" class="tit_lbl pilsoo_item">비밀번호</label>
+							<div class="app_content"><input   required name="password_lbl"  type="password" class="w100p" id="paassword_lbl" placeholder="비밀번호를 입력해주세요"/></div>
+						</li>
+						<li class="clear">
+							<label for="password_chk_lbl" class="tit_lbl pilsoo_item">비밀번호 확인</label>
+							<div class="app_content"><input   required name="password_chk_lbl"  type="password" class="w100p" id="paassword_chk_lbl" placeholder="비밀번호를 다시 한번 입력해주세요"/></div>
+						</li>
 
 					</ul>
 					<p class="btn_line">
