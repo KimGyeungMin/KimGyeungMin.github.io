@@ -3,7 +3,6 @@
 .location_area {
 	height: 260px;
 	background: url(../img/img_top2.jpg) no-repeat center;
-	background-size: 100%;
 }
 .tit_page {
 	padding: 140px 0 0 0;
@@ -264,10 +263,10 @@ input::placeholder {
 .appForm textarea::placeholder {
 	color: #999;
 }
-textarea:-ms-input-placeholder{
+textarea:-ms-input-placeholder {
 	color: #999;
 }
-input:-ms-input-placeholder{
+input:-ms-input-placeholder {
 	color: #999;
 }
 .btn_baseColor {

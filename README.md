@@ -3,18 +3,12 @@
 - 반응형 웹사이트 만들기
 - 파이어폭스 개발자도구의 스타일 탭사용
 - 기존 PC용 > 태블릿용 > 모바일용 CSS작업순서를 [모바일용 > 태블릿용 > PC용] 으로 변경작업
-#### 20201104(수)
--크로스 브라우징 CSS
-:-ms-input-placeholder ex11에서..
--크로스브라우징 처리
-    1. 브라우저 IE11, 크롬, 파이어폭스, 오페라
-    2.브라우저 교차 검사 후 처리
-    3. display :block, revert IE11(윈7)지원하지 않기 때문에 display : tabale-cell 로 처리 해야 함
-    4.width : initial -> IE11(윈7)지원하지 않음
-        width:inherit로 처리 해야 함.
-    5.메인페이지 로고와 슬라이드(모바일용/pc용) 이미지 교체
 
-        
+#### 20201104(수)
+- 메인페이지 로고 와 슬라이드(모바일용/PC용) 이미지교체
+- 테이블 display: none -> block
+- 테이블 display: none -> table-cell 처리
+
 #### 20201103(화) 
 - 시만텍 웹: 의미있는 태그사용 == html5사용
 - header, footer, article, aside 웹문서에 의미있는 영역 지정.
