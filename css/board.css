@@ -2,8 +2,9 @@
 /* 메인상단 위치표시영역 */
 .location_area {
 	height: 260px;
-	background: url(../img/img_top2.jpg) no-repeat center;
-	background-size: 100%;
+	background: url(../img/img_top2.jpg) no-repeat center ;
+	background-size: cover;
+	
 }
 .tit_page {
 	padding: 140px 0 0 0;
@@ -218,7 +219,7 @@ input::placeholder {
 }
 .app_list {
 	padding: 10px 0;
-	border-bottom: 1px solid #ccc;
+	/* border-bottom: 1px solid #ccc; */
 }
 .app_list li {
 	position: relative;
@@ -363,11 +364,11 @@ input:-ms-input-placeholder {
 	float: left;
 	width: 100px;
 	padding: 0 0 0 50px;
-	background:url(./img/ico_nearNext.png) no-repeat 12px 50%;
+	background:url(../img/ico_nearNext.png) no-repeat 12px 50%;
 	font-size: 15px;
 }
 .near_list li h4.next {
-	background-image: url(./img/ico_nearPrev.png);
+	background-image: url(../img/ico_nearPrev.png);
 }
 /* //태블릿+PC용 게시판뷰 */
 }
