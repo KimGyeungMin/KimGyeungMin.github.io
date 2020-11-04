@@ -7,9 +7,10 @@
 -크로스브라우징 처리
     1. 브라우저 IE11, 크롬, 파이어폭스, 오페라
     2.브라우저 교차 검사 후 처리
-    3. display : revert IE11(윈7)지원하지 않기 때문에 display : tabale-cell 로 처리 해야 함
+    3. display :block, revert IE11(윈7)지원하지 않기 때문에 display : tabale-cell 로 처리 해야 함
     4.width : initial -> IE11(윈7)지원하지 않음
         width:inherit로 처리 해야 함.
+    5.메인페이지 로고와 슬라이드(모바일용/pc용) 이미지 교체
 
         
 #### 20201103(화) 
