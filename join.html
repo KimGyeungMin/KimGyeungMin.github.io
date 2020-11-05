@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="css/tablet.css">
 <link rel="stylesheet" href="css/pc.css">
 <link rel="stylesheet" href="css/board.css">
+<link rel="stylesheet" href="css/join.css">
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery.smooth-scroll.min.js"></script>
 <script src="js/main.js"></script>
@@ -17,59 +18,7 @@
 <script src="js/jquery.validate.js"></script>
 <script src="js/additional-methods.js"></script>
 <style>
-	label{
-		vertical-align: middle;
-	}
-.radio_area {
-	padding-top: 10px;
-	height: 40px;
-	padding-left: 20px;
-	box-sizing: border-box;
-}
-.css-radio{
-	overflow: hidden;
-	position: absolute;
-	left: -1000px;
-	width: 1px;
-	height:1px ;
-}
-.css-radio + label {
-	display: inline-block;
-	padding-left: 20px !important;
-	margin-right: 20px;
-	background: url(./img/bg_radio.png)no-repeat 0 0;
-	cursor:pointer;
-	font-size: 15px;
-}
-.css-radio:checked + label{
-	background-position: 0 -50px;
-}
-.checkbox_area {
-	padding-left: 20px;
-	height: 40px;
-	padding-top: 10px;
-	box-sizing: border-box;
-}
-.css-checkbox{
-	overflow: hidden;
-	position: absolute;
-	left: -1000px;
-	width: 1px;
-	height: 1px;
-}
-.css-checkbox + label{
-	display: inline-block;
-	height: 20px;
-	padding-left: 30px !important;
-	line-height: 20px !important;
-	background: url(./img/bg_checkbox.png) no-repeat 0 0;
-	background-size: 20px;
-	cursor: pointer;
-	-moz-user-select: none;
-}
-.css-checkbox:checked + label{
-	background-position: 0 -20px;
-}
+
 </style>
 <script>
 $(document).ready(function() { 
@@ -178,23 +127,23 @@ $(document).ready(function() {
 					<ul class="app_list">
 						<li class="clear">
 							<label for="email_lbl" class="tit_lbl pilsoo_item">이메일</label>
-							<div class="app_content"><input required type="email" name="email"  class="w100p" id="email_lbl" placeholder="이메일을 입력해주세요"/></div>
+							<div class="app_content"><input required type="email" name="email"   id="email_lbl" placeholder="이메일을 입력해주세요"/></div>
 						</li>
 						<li class="clear">
 							<label for="name_lbl" class="tit_lbl pilsoo_item">작성자명</label>
-							<div class="app_content"><input   required name="name_lbl"  type="text" class="w100p" id="name_lbl" placeholder="이름을 입력해주세요"/></div>
+							<div class="app_content"><input   required name="name_lbl"  type="text"  id="name_lbl" placeholder="이름을 입력해주세요"/></div>
 						</li>
 						<li class="clear">
 							<label for="password_lbl" class="tit_lbl pilsoo_item">비밀번호</label>
-							<div class="app_content"><input   required name="password_lbl"  type="password" class="w100p" id="paassword_lbl" placeholder="비밀번호를 입력해주세요"/></div>
+							<div class="app_content"><input   required name="password_lbl"  type="password"  id="paassword_lbl" placeholder="비밀번호를 입력해주세요"/></div>
 						</li>
 						<li class="clear">
 							<label for="password_chk_lbl" class="tit_lbl pilsoo_item">비밀번호 확인</label>
-							<div class="app_content"><input   required name="password_chk_lbl"  type="password" class="w100p" id="paassword_chk_lbl" placeholder="비밀번호를 다시 입력해주세요"/></div>
+							<div class="app_content"><input   required name="password_chk_lbl"  type="password"  id="paassword_chk_lbl" placeholder="비밀번호를 다시 입력해주세요"/></div>
 						</li>
 						<li class="clear">
 							<label for="tel_lbl" class="tit_lbl pilsoo_item">연락처</label>
-							<div class="app_content"><input   required name="tel_lbl"  type="tel" class="w100p" id="tel_lbl" placeholder="휴대폰'-' 없이 숫자만 입력해주세요"/></div>
+							<div class="app_content"><input   required name="tel_lbl"  type="digits"  id="tel_lbl" placeholder="휴대폰'-' 없이 숫자만 입력해주세요"/></div>
 						</li>
 						<li class="clear">
 							<label for="gender_lbl" class="tit_lbl pilsoo_item">성별</label>
@@ -211,7 +160,7 @@ $(document).ready(function() {
 						</li>
 						<li class="clear">
 							<label for="agree_chk_lbl" class="tit_lbl pilsoo_item">개인정보활용동의</label>
-							<div class="app_content checkbox_area"><input  name="agree"  type="checkbox"class="css-checkbox" id="agree_lbl" >
+							<div class="app_content checkbox_area"><input  name="agree"  type="checkbox"class="css-checkbox" id="agree_lbl" required="checked" >
 							<label for="agree_lbl">동의함</label>
 							</div>
 						</li>
